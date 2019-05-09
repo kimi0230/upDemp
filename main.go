@@ -7,7 +7,8 @@ import (
 )
  
 func main() {
-    port := ":" + "8000"
+    port := ":" + "80"
+    //port := ":" + os.Getenv("PORT")
     stage := os.Getenv("UP_STAGE")
  
     r := gin.Default()
